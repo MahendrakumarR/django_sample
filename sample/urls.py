@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path   # here add include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('to_do_list/', include("to_do_list.urls"))    # this line create for calling urls from to_do_list
 ]
