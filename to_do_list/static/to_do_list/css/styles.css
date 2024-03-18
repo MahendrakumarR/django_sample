@@ -11,14 +11,20 @@ form {
 ul {
     list-style-type: none;
     padding: 0;
+    position: relative;
     
 }
 
 li {
     margin-bottom: 5px;
-    background-color: orange;
+    position: relative;
+    text-align: left;
+    
 }
 .delete{
-   background-color: red;
+   position: absolute;
+   align-content: center;
+   top: 10px;
+   left: 300px;
    color: orange;
 }
