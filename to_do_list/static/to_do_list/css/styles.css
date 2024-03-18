@@ -1,10 +1,31 @@
 /* to_do_list/static/css/styles.css */
 body {
     font-family: Arial, sans-serif;
+    
+    
+}
+h1{
+    text-align: center;
+    animation: colo 8s infinite ;
+}
+
+@keyframes colo{
+    0%   {color: red;}
+    10%   {color: rgb(61, 163, 57);}
+    25%  {color: rgb(173, 173, 52);}
+    40%   {color: rgb(175, 96, 49);}
+    55%  {color: rgb(57, 57, 160);}
+    70%   {color: rgb(160, 55, 128);}
+    100% {color: rgb(49, 133, 145);}
+  
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    
+    
     
 }
 
@@ -13,18 +34,18 @@ ul {
     padding: 0;
     position: relative;
     
+    
+    
 }
 
 li {
-    margin-bottom: 5px;
     position: relative;
-    text-align: left;
-    
+    margin-left: 410px;
+       
 }
 .delete{
-   position: absolute;
-   align-content: center;
-   top: 10px;
-   left: 300px;
-   color: orange;
+   position: relative;
+   top: 1px;
+   margin-left: 70px;
+   color: rgb(211, 29, 44);
 }
