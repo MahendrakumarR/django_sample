@@ -18,5 +18,6 @@ from django.urls import include, path   # here add include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('work/', include("work.urls"))    # this line create for calling urls from to_do_list
+    path('work/', include("work.urls")),    # this line create for calling urls from to_do_list
+    path('to_do_list/', include('to_do_list.urls'))
 ]

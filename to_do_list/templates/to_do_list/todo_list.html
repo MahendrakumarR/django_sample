@@ -1,0 +1,31 @@
+<!-- to_do_list/templates/to_do_list/todo_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'to_do_list/css/styles.css' %}">
+    
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul>
+        {% for todo in todos %}
+            <li>
+                {{ todo.task }}
+                <form method="POST" action="{% url 'delete_task' todo.id %}">
+                    {% csrf_token %}
+                    <button type="submit" class="delete">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
