@@ -9,6 +9,6 @@ def  brain(request):                           # same as the above code
     return HttpResponse("Hello ,Brain ")
 
 def own(request, name):
-    return render(request, "to_do_list/own.html", {'name':name})   # using html for user input value
+    return render(request, "work/own.html", {'name':name})   # using html for user input value
 
 # Create your views here.
