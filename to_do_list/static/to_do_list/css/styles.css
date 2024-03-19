@@ -20,12 +20,40 @@ h1{
   
 }
 
+label{
+    margin:10px;
+    margin-top:20px;
+    color: brown;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+input[type="text"] {
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    border:3px solid rgba(219, 96, 96, 0.466);
+    
+}
+
+.add {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    margin: 10px;
+    margin-top:14px;
+    border-radius: 10px;
+    border:3px solid rgba(143, 124, 248, 0.658);
+    background-color: rgba(82, 204, 66, 0.658);
+    color: rgba(131, 3, 250, 0.541);
+}
+
+
 form {
     margin-bottom: 40px;
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;  
     
 }
 
@@ -41,11 +69,13 @@ ul {
 li {
     position: relative;
     margin-left: 410px;
+    margin-top: 50px;
        
 }
 .delete{
    position: relative;
-   top: 1px;
    margin-left: 70px;
+   left: 10px;
+   bottom: 20px;
    color: rgb(211, 29, 44);
 }
