@@ -61,9 +61,7 @@ ul {
     list-style-type: none;
     padding: 0;
     position: relative;
-    
-    
-    
+       
 }
 
 li {
@@ -79,3 +77,4 @@ li {
    bottom: 20px;
    color: rgb(211, 29, 44);
 }
+
