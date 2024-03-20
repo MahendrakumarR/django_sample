@@ -15,18 +15,18 @@
         {{ form }}
         <button type="submit" class="add">Add Task</button>
     </form>
-    <div>
         <ul>
             {% for todo in todos %}
-                <li>
-                    {{ todo.task }}
-                    <form method="POST" action="{% url 'delete_task' todo.id %}">
-                        {% csrf_token %}
-                        <button type="submit" class="delete">Delete</button>
-                    </form>
-                </li>
+                <div>
+                    <li>
+                        {{ todo.task }}
+                        <form method="POST" action="{% url 'delete_task' todo.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                    </li>
+                </div>
             {% endfor %}
         </ul>
-    </div>
 </body>
 </html>

@@ -33,8 +33,12 @@ input[type="text"] {
     height: 30px;
     width: 200px;
     border-radius: 15px;
-    border:3px solid rgba(219, 96, 96, 0.466);
+    border:3px solid rgb(236, 72, 236);
     
+}
+input[type="text"]:hover{
+    cursor: pointer;
+    border: 3px solid orange;
 }
 
 .add {
@@ -44,9 +48,15 @@ input[type="text"] {
     margin: 10px;
     margin-top:14px;
     border-radius: 10px;
-    border:3px solid rgba(143, 124, 248, 0.658);
-    background-color: rgba(134, 243, 119, 0.658);
-    color: rgba(224, 82, 16, 0.541);
+    border:3px solid rgb(138, 6, 6);
+    background-color: rgb(114, 106, 192);
+    color: rgb(115, 250, 82);
+    cursor: pointer;
+}
+.add:hover{
+    color:rgb(250, 248, 252);
+    background-color:rgb(42, 165, 63);
+    border:3px solid rgb(2, 2, 2);
 }
 
 
@@ -61,20 +71,35 @@ ul {
     list-style-type: none;
     padding: 0;
     position: relative;
-       
+    
 }
 
 li {
-    position: relative;
-    margin-left: 410px;
-    margin-top: 50px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: orange;
+    
        
 }
 .delete{
    position: relative;
-   margin-left: 70px;
-   left: 10px;
+   margin-left: 460px;
    bottom: 20px;
-   color: rgb(211, 29, 44);
+   width: 100px;
+   color: rgb(15, 15, 15);
+   background-color: rgb(147, 187, 187);
+   border: 2px solid red;
+   border-radius: 6px;
+}
+div{
+    margin-top: 12px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 600px;
+    margin-left: 390px;
+    border: 2px solid black;
+    border-radius: 12px;
+    
 }
 
