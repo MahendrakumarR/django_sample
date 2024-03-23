@@ -1,4 +1,10 @@
-table{
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+table{   
     border: 1px solid black;
 }
 h1{
