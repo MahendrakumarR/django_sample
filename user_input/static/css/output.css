@@ -9,9 +9,11 @@ table{
     top: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid black;
+    border-collapse:collapse ;
     padding: 2px;
 }
 
 th,td{
+    border: 1px solid black;
     padding:4px;
 }
