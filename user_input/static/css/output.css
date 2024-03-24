@@ -11,9 +11,24 @@ table{
     border: 1px solid black;
     border-collapse:collapse ;
     padding: 2px;
+    background-color: aquamarine;
+    box-shadow: 0px 0px 6px,
+                0px 0px 2px rgb(249, 250, 248);
 }
 
 th,td{
     border: 1px solid black;
     padding:4px;
+}
+th{
+    color: red;
+    font-family:'Times New Roman', Times, serif
+}
+.button{
+    color: rgba(20, 20, 20, 0.7);
+    background-color: rgba(178, 190, 8, 0.6);
+    border: 1px solid rgba(19, 18, 18,0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
 }
