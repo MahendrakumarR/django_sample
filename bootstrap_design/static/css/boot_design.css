@@ -2,3 +2,8 @@ h1{
     position: relative;
     top: 10px;
 }
+.row{
+    position: relative;
+    padding: 20px;
+    margin-bottom: 10px;
+}
