@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <title>Bootstrap  user data</title>
+</head>
+<body>
+    {% block content %}
+    <form>
+        {% csrf_token %}
+        <table>
+            <tr>
+                <th colspan="2">Details</th><br>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{name}}</td> <br>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{age}}</td> <br>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{phone}}</td> <br>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <center><a href="/boot.html"><button type="button" class="button">Back</button></a></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    {% endblock %}  
+</body>
+</html>
