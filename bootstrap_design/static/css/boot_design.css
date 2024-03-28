@@ -1,6 +1,7 @@
 h1 {
     position: relative;
-    top: 10px;
+    top: 0px;
+    padding: 10px;
 }
 
 .row {
@@ -12,21 +13,25 @@ h1 {
 
 .row label {
     flex: 1;
-    max-width: 30%;
+    max-width: 30px;
     text-align: right; /* Align text within labels to the right */
     margin-right: 10px;
 }
 
 .row input {
     flex: 1;
-    max-width: 30%;
-    margin-left: 10px; /* Add some space between label and input */
+    max-width: 280px;
+    margin-left: 30px; /* Add some space between label and input */
     text-align: start; /* Center align text content within input fields */
 }
 .row button{
-    margin-left: 580px;
+    left: 250px;
     position: relative;
     text-align: center;
-    width: 100px;
-    
+    width: 100px;    
+}
+#back{
+    max-width: 400px;
+    background-color: orange;
+
 }
