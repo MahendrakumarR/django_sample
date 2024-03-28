@@ -14,10 +14,10 @@
     <h1 class="text-md-center text-success text-warning bg-dark">Welcome this is bootstrap page</h1>
     <form action="boot_out" method="POST">
         {% csrf_token %}
-        <div class="container text-center text-bg-info p-3 d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2"  id="back">
+        <div class="container text-center text-bg-info p-3 "  id="back">
             <div class="row">
                 <label class="col">Name</label>
-                <input type="text" name="name" class="col" autocomplete="off" required>
+                <input type="text" name="name" class="col " autocomplete="off" required>
             </div>
             <div class="row">
                 <label class="col">Age</label>
@@ -28,7 +28,7 @@
                 <input type="text" name="phone" class="col" autocomplete="off" required>
             </div>
             <div class="row">
-                <button type="submit" class="btn btn-outline-success">submit</button>
+                <button type="submit" class="btn btn-outline-success ">submit</button>
             </div>
         </div>
         
