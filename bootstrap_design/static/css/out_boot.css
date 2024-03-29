@@ -4,12 +4,10 @@ h1 {
 }
 
 .row {
+    display: flex;
     padding: 20px;
     margin: 10px;
     text-align: center; /* Center align text content within the row */
-}
-table{
-    text-align: center;
 }
 .row button{
     left: 630px;
@@ -28,3 +26,42 @@ table{
     box-shadow: 1px 1px 1px 3px black;
 
 }
+
+/*
+
+    h1 {
+        position: relative;
+        padding: 0px;
+    }
+
+    .row {
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .row button {
+        
+        left: 630px;
+        top: 370px;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+    }
+
+    #back {
+        margin-top: 30px;
+        max-height: 450px;
+        max-width: 400px;
+        background-color: orange;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 3px black;
+    }
+
+        
+    th.col {
+        width: 100px; 
+    }
+
+*/
