@@ -1,6 +1,19 @@
 h1 {
     position: relative;
+    margin-left: 15px;
     padding: 0px;
+}
+#d{
+    max-width: 35px;
+    padding: 2px;
+    margin-left: 111px;
+    position: absolute;
+    color: rosybrown;
+}
+
+#d:hover{
+    background-color: rgba(100, 150, 200,0.1);
+    color: red;
 }
 
 .row {
@@ -9,9 +22,19 @@ h1 {
     margin: 10px;
     text-align: center; /* Center align text content within the row */
 }
+th{
+    width: 100px;
+}
+td.col{
+    color:rgb(110, 6, 55);
+}
+td.shadow:hover{
+    color: white;
+    background-color: red;
+}
 .row button{
     left: 630px;
-    top: 370px;
+    top: 470px;
     position: absolute;
     text-align: center;
     width: 100px;    
@@ -19,49 +42,10 @@ h1 {
 
 #back{
     margin-top: 30px;
-    max-height: 450px;
+    max-height: 550px;
     max-width: 400px;
     background-color: orange;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 3px black;
 
 }
-
-/*
-
-    h1 {
-        position: relative;
-        padding: 0px;
-    }
-
-    .row {
-        display: flex;
-        padding: 20px;
-        margin: 10px;
-        text-align: center;
-    }
-
-    .row button {
-        
-        left: 630px;
-        top: 370px;
-        position: absolute;
-        text-align: center;
-        width: 100px;
-    }
-
-    #back {
-        margin-top: 30px;
-        max-height: 450px;
-        max-width: 400px;
-        background-color: orange;
-        border-radius: 20px;
-        box-shadow: 1px 1px 1px 3px black;
-    }
-
-        
-    th.col {
-        width: 100px; 
-    }
-
-*/
