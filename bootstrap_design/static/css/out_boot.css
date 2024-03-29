@@ -1,7 +1,6 @@
 h1 {
     position: relative;
-    top: 0px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .row {
@@ -25,18 +24,18 @@ h1 {
     text-align: start; /* Center align text content within input fields */
 }
 .row button{
-    left: 250px;
-    position: relative;
+    left: 630px;
+    top: 370px;
+    position: absolute;
     text-align: center;
     width: 100px;    
 }
 #back{
     margin-top: 30px;
-    max-height: 350px;
+    max-height: 450px;
     max-width: 400px;
     background-color: orange;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 3px black;
 
 }
-
