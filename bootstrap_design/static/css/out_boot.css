@@ -4,24 +4,12 @@ h1 {
 }
 
 .row {
-    display: flex;
     padding: 20px;
     margin: 10px;
     text-align: center; /* Center align text content within the row */
 }
-
-.row label {
-    flex: 1;
-    max-width: 30px;
-    text-align: right; /* Align text within labels to the right */
-    margin-right: 10px;
-}
-
-.row input {
-    flex: 1;
-    max-width: 280px;
-    margin-left: 30px; /* Add some space between label and input */
-    text-align: start; /* Center align text content within input fields */
+table{
+    text-align: center;
 }
 .row button{
     left: 630px;
@@ -30,6 +18,7 @@ h1 {
     text-align: center;
     width: 100px;    
 }
+
 #back{
     margin-top: 30px;
     max-height: 450px;
