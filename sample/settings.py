@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'sqlite_proj',
     'bootstrap_design',
     'user_input',
     'to_do_list',
