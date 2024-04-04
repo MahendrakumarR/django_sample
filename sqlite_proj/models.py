@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class register(models.Model):
+class Datas(models.Model):    # here create a new class for storing values to database
     Name = models.CharField(max_length=20, default="")
     Age = models.IntegerField(max_length=20, default="")
     Address = models.CharField(max_length=50, default="")
