@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <form action="" method="POST" autocomplete="off">
+                <form action="adata" method="POST" autocomplete="off">
                     {% csrf_token %}
                     <h3 class="page-header text-primary text-center">Registration</h3>
                     <div class="form-group both">
@@ -50,7 +50,17 @@
                             <th>Phone</th>
                         </tr>
                         <tbody>
-
+                            {% for data in datas %} <!-- Here get data from 'views.py' (return.....,{'datas':mydata})-->
+                            <tbody>
+                                <tr>
+                                    <td>{{forloop.counter}}</td> <!--Here count the data values-->
+                                    <td>{{data.name}}</td>       <!--Here get data from 'models.py'-->
+                                    <td>{{data.age}}</td>        <!--Here get data from 'models.py'-->
+                                    <td>{{data.addressr}}</td>   <!--Here get data from 'models.py'-->
+                                    <td>{{data.phone}}</td>      <!--Here get data from 'models.py'-->
+                                </tr>
+                            </tbody>
+                            {% endfor %}
                         </tbody>
                     </thead>
                 </table>

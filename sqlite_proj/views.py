@@ -3,6 +3,10 @@ from.models import MyInfo            # import 'models.py' for store data into da
 
 
 def data (request):
+    mydata = MyInfo.objects.all()     # here retrive all data for show in webpage
+    return render(request, "sql_front.html")
+
+def adata(request):
     if request.method =='POST':
         Name = request.POST['name']    # here get data from html file  # then Name is varible to sotre value of 'name' from html file
         Age = request.POST['age']      # here get data from html file 
@@ -14,7 +18,9 @@ def data (request):
         obj.age = Age             # here 'obj.age' is call the 'models.py' class variable 'age'
         obj.address = Address     # here 'obj.address' is call the 'models.py' class variable 'address'
         obj.phone = Phone         # here 'obj.phone' is call the 'models.py' class variable 'phone'
-        obj.save()          # here use 'save' for save all data into database
+        obj.save()                # here use 'save' for save all data into database
+        mydata = MyInfo.objects.all()     # here retrive all data for show in webpage
+        return render(request, "sql_front.html",{'datas':mydata})
     return render(request, "sql_front.html")
 
 # Create your views here.
