@@ -39,6 +39,7 @@
                 </form>
             </div>
             <div class="col g-start-5">
+                {% if datas %}          <!--Here using if for no datas in table then only showwing the heads so this remove all field if empty-->
                 <h3 class="page-head text-primary text-center">View Data</h3>
                 <table class="table table-border">
                     <thead>
@@ -56,7 +57,7 @@
                                     <td>{{forloop.counter}}</td> <!--Here count the data values-->
                                     <td>{{data.name}}</td>       <!--Here get data from 'models.py'-->
                                     <td>{{data.age}}</td>        <!--Here get data from 'models.py'-->
-                                    <td>{{data.addressr}}</td>   <!--Here get data from 'models.py'-->
+                                    <td>{{data.address}}</td>   <!--Here get data from 'models.py'-->
                                     <td>{{data.phone}}</td>      <!--Here get data from 'models.py'-->
                                 </tr>
                             </tbody>
@@ -64,6 +65,7 @@
                         </tbody>
                     </thead>
                 </table>
+                {% endif %}
             </div>
         </div>
     </div>

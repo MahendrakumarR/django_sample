@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from.models import MyInfo            # import 'models.py' for store data into database
 
 
 def data (request):
     mydata = MyInfo.objects.all()     # here retrive all data for show in webpage
-    return render(request, "sql_front.html")
+    if(mydata!=''):
+        return render(request,'sql_front.html',{'datas':mydata})
+    else:
+        return render(request, "sql_front.html")
 
 def adata(request):
     if request.method =='POST':
@@ -20,7 +23,7 @@ def adata(request):
         obj.phone = Phone         # here 'obj.phone' is call the 'models.py' class variable 'phone'
         obj.save()                # here use 'save' for save all data into database
         mydata = MyInfo.objects.all()     # here retrive all data for show in webpage
-        return render(request, "sql_front.html",{'datas':mydata})
+        return redirect('sqlite_proj')         # here 'sqlite_proj' name is from { app urls file('urls.py') } file name redirect to data page
     return render(request, "sql_front.html")
 
 # Create your views here.
