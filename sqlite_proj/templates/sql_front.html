@@ -49,6 +49,8 @@
                             <th>Age</th>
                             <th>Address</th>
                             <th>Phone</th>
+                            <th>Update</th>
+                            <th>Delete</th>
                         </tr>
                         <tbody>
                             {% for data in datas %} <!-- Here get data from 'views.py' (return.....,{'datas':mydata})-->
@@ -59,6 +61,7 @@
                                     <td>{{data.age}}</td>        <!--Here get data from 'models.py'-->
                                     <td>{{data.address}}</td>   <!--Here get data from 'models.py'-->
                                     <td>{{data.phone}}</td>      <!--Here get data from 'models.py'-->
+                                    <td><a class="btn btn-success" href="udata/{{data.id}}">Update</a></td> <!-- Here get id from database-->
                                 </tr>
                             </tbody>
                             {% endfor %}

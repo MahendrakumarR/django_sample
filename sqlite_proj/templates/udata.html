@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/sqlite_design.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <form action="udata/{{data.id}}" method="POST" autocomplete="off">
+                    {% csrf_token %}
+                    <h3 class="page-header text-primary text-center">Registration</h3>
+                    <div class="form-group both">
+                        <label>Name</label>
+                        <input type="text" name="name" value = "{{data.name}}" placeholder="Enter your name" required>
+                    </div>                             <!-- Here use value for retrive particular value -->
+                    <div class="form-group both">
+                        <label>Age</label>
+                        <input type="number" name="age" value = "{{data.age}}" placeholder="Enter your age" required>
+                    </div>
+                    <div class="form-group both">
+                        <label>Address</label>
+                        <input type="text" name="address" value = "{{data.address}}" placeholder="Enter your address" required>
+                    </div>
+                    <div class="form-group both">
+                        <label>Phone</label>
+                        <input type="number" name="phone" value = "{{data.phone}}" placeholder="Enter your phone number" required>
+                    </div><br>
+                    <div class="form-group pull-right">
+                        <input type="submit" name="submit" value="Update" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

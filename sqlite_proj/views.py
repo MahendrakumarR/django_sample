@@ -26,4 +26,22 @@ def adata(request):
         return redirect('sqlite_proj')         # here 'sqlite_proj' name is from { app urls file('urls.py') } file name redirect to data page
     return render(request, "sql_front.html")
 
+def udata(request, id):    # Here using id for getting values
+    mydata = MyInfo.objects.get(id=id)    # Here get data from table'MyInfo'
+    if request.method == "POST":
+        Name = request.POST['name']    # here get data from html file  # then Name is varible to sotre value of 'name' from html file
+        Age = request.POST['age']      # here get data from html file 
+        Address = request.POST['address']   # here get data from html file 
+        Phone = request.POST['phone']       # here get data from html file 
+
+        mydata.name=Name
+        mydata.age=Age
+        mydata.address=Address
+        mydata.phone=Phone
+        mydata.save()
+
+        return redirect('data')
+        
+    return render(request, 'udata.html',{'data':mydata})
+
 # Create your views here.
