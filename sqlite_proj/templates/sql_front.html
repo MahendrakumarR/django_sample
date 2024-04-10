@@ -61,7 +61,7 @@
                                     <td>{{data.age}}</td>        <!--Here get data from 'models.py'-->
                                     <td>{{data.address}}</td>   <!--Here get data from 'models.py'-->
                                     <td>{{data.phone}}</td>      <!--Here get data from 'models.py'-->
-                                    <td><a class="btn btn-success" href="udata/{{data.id}}">Update</a></td> <!-- Here get id from database-->
+                                    <td><a class="btn btn-success" href="{% url 'sqlite_udata' data.id %}">Update</a></td> <!-- Here get id from database-->
                                 </tr>
                             </tbody>
                             {% endfor %}
