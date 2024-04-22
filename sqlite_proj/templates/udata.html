@@ -11,28 +11,28 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
                 <form action="{% url 'sqlite_udata' data.id %}" method="POST" autocomplete="off">
                     {% csrf_token %}
                     <h3 class="page-header text-primary text-center">Registration</h3>
-                    <div class="form-group both">
+                    <div class="form-group">
                         <label>Name</label>
-                        <input type="text" name="name" value = "{{data.name}}" placeholder="Enter your name" required>
-                    </div>                             <!-- Here use Value for retrive particular value -->
-                    <div class="form-group both">
+                        <input type="text" name="name" value="{{data.name}}" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
                         <label>Age</label>
-                        <input type="number" name="age" value = "{{data.age}}" placeholder="Enter your age" required>
+                        <input type="number" name="age" value="{{data.age}}" class="form-control" placeholder="Enter your age" required>
                     </div>
-                    <div class="form-group both">
+                    <div class="form-group">
                         <label>Address</label>
-                        <input type="text" name="address" value = "{{data.address}}" placeholder="Enter your address" required>
+                        <input type="text" name="address" value="{{data.address}}" class="form-control" placeholder="Enter your address" required>
                     </div>
-                    <div class="form-group both">
+                    <div class="form-group">
                         <label>Phone</label>
-                        <input type="number" name="phone" value = "{{data.phone}}" placeholder="Enter your phone number" required>
-                    </div><br>
-                    <div class="form-group ">
+                        <input type="number" name="phone" value="{{data.phone}}" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group text-center">
                         <input type="submit" name="submit" value="Update" class="btn btn-primary">
                     </div>
                 </form>

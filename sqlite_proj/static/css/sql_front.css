@@ -1,3 +1,33 @@
-form{
-    color: red;
+/* sql_front.css */
+
+/* Align the forms */
+.container-fluid {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Center the form headers */
+.page-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Style for the update and clear buttons */
+.btn-success,
+.btn-danger {
+    margin-left: 10px;
+}
+
+/* Style for form alignment */
+.form-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-align .left,
+.form-align .right {
+    width: 48%; /* Adjust width as needed */
 }

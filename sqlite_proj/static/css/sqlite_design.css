@@ -1,4 +1,16 @@
-.both{
-    padding: 10px;
-    text-align: center;
+/* sqlite_design.css */
+
+/* Align the forms */
+.container-fluid {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Center the form headers */
+.page-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
