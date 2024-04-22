@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <form action="udata/{{data.id}}" method="POST" autocomplete="off">
+                <form action="{% url 'sqlite_udata' data.id %}" method="POST" autocomplete="off">
                     {% csrf_token %}
                     <h3 class="page-header text-primary text-center">Registration</h3>
                     <div class="form-group both">

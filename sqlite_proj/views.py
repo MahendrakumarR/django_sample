@@ -9,7 +9,7 @@ def data (request):
     else:
         return render(request, "sql_front.html")
 
-def adata(request):
+def adata(request):           #  <!--adata mean add data-->
     if request.method =='POST':
         Name = request.POST['name']    # here get data from html file  # then Name is varible to sotre value of 'name' from html file
         Age = request.POST['age']      # here get data from html file 
@@ -23,10 +23,10 @@ def adata(request):
         obj.phone = Phone         # here 'obj.phone' is call the 'models.py' class variable 'phone'
         obj.save()                # here use 'save' for save all data into database
         mydata = MyInfo.objects.all()     # here retrive all data for show in webpage
-        return redirect('sqlite_proj')         # here 'sqlite_proj' name is from { app urls file('urls.py') } file name redirect to data page
+        return redirect('data')         # here 'data' name is from { app urls file('urls.py') } file name redirect to data page
     return render(request, "sql_front.html")
 
-def udata(request, id):    # Here using id for getting values
+def udata(request, id):    # Here using id for getting values <!--udata mean update data-->
     mydata = MyInfo.objects.get(id=id)    # Here get data from table'MyInfo'
     if request.method == "POST":
         Name = request.POST['name']    # here get data from html file  # then Name is varible to sotre value of 'name' from html file
@@ -43,5 +43,10 @@ def udata(request, id):    # Here using id for getting values
         return redirect('data')
         
     return render(request, 'udata.html',{'data':mydata})
+
+def ddata(request, id):   #<!--ddata mean delete data-->
+    mydata = MyInfo.objects.get(id=id)    # Here get data from table'MyInfo'
+    mydata.delete()
+    return redirect('data')  # Here using 'data' is a home url 
 
 # Create your views here.

@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <form action="adata" method="POST" autocomplete="off">
+                <form action="adata" method="POST" autocomplete="off"> <!--adata mean add data-->
                     {% csrf_token %}
                     <h3 class="page-header text-primary text-center">Registration</h3>
                     <div class="form-group">
@@ -71,7 +71,8 @@
                                     <td>{{data.age}}</td>        <!--Here get data from 'models.py'-->
                                     <td>{{data.address}}</td>   <!--Here get data from 'models.py'-->
                                     <td>{{data.phone}}</td>      <!--Here get data from 'models.py'-->
-                                    <td><a class="btn btn-success" href="udata/{{data.id}}">Update</a></td> <!-- Here get id from database-->
+                                    <td><a class="btn btn-success" href="udata/{{data.id}}">Update</a></td> <!-- Here get id from database--> <!--udata mean update data-->
+                                    <td><a class="btn btn-danger" href="ddata/{{data.id}}">Delete</a></td> <!-- Here get id from database--> <!--ddata mean delete data-->
                                 </tr>
                             </tbody>
                             {% endfor %}
