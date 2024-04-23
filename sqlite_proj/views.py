@@ -29,10 +29,10 @@ def adata(request):           #  <!--adata mean add data-->
 def udata(request, id):    # Here using id for getting values <!--udata mean update data-->
     mydata = MyInfo.objects.get(id=id)    # Here get data from table'MyInfo'
     if request.method == "POST":
-        Name = request.POST['name']    # here get data from html file  # then Name is varible to sotre value of 'name' from html file
-        Age = request.POST['age']      # here get data from html file 
-        Address = request.POST['address']   # here get data from html file 
-        Phone = request.POST['phone']       # here get data from html file 
+        Name = request.POST['name']    # Here get data from html file  # then Name is varible to sotre value of 'name' from html file
+        Age = request.POST['age']      # Here get data from html file 
+        Address = request.POST['address']   # Here get data from html file 
+        Phone = request.POST['phone']       # Here get data from html file 
 
         mydata.name=Name
         mydata.age=Age
